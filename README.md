@@ -1,0 +1,1 @@
+This is day3 Lab1 exercise project
