@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="" />
-		<title>list IT - Manage Lists</title>
-	</head>
-	<body>
-			<div><a href="">list IT</a></div>
-		<div>
-			<ul>
-				<li><a href="index.html">Logout</a></li>
-			</ul>
-		</div>
-		<div>
-			<h1>list IT</h1>
-			<h2>lists made easy <img /></h2>
-		</div>
-		<h2>Manage Lists</h2>
-		<form target="#">
-			<div>View List</div>
-			<div>
-				<select>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <title>list IT - Manage Lists</title>
+</head>
+
+<body>
+    <!-- Start Body -->
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">list IT</a>
+        <ul>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <!-- Page Header -->
+    <header>
+        <h1>list IT</h1>
+        <h2>lists made easy <img src="img/logo.png" alt="logon" /></h2>
+    </header>
+    <!-- Manage desc-->
+    <main>
+        <h2>Manage Lists</h2>
+        <!-- Show selection-->
+        <form target="_self">
+            <br>View List<br>
+            <select>
 					<option>Select a List</option>
 					<option>Grocery Shopping</option>
 					<option>Vacation Shoppping</option>
 					<option>Chores</option>
-				</select>
-			</div>
-			<div><button>Delete List</button></div>
+			</select>
+            <br>
+            <button>Delete List</button>
+            <br>List Name
+            <br>
+            <input type="text" />
+            <button>Add List</button>
+        </form>
+        <hr />
+        <!-- Show list of quantities-->
+        <form target="_self">
+            <table>
+                <tr>
+                    <td>Item</td>
+                    <td>Quantity</td>
+                    <td>Description</td>
+                    <td colspan="2"><button>Print</button>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>1</td>
+                    <td>Low Fat</td>
+                    <td>edit</td>
+                    <td>delete</td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                    <td>1</td>
+                    <td>Whole Wheat</td>
+                    <td>edit</td>
+                    <td>delete</td>
+                </tr>
+                <tr>
+                    <td>Eggs</td>
+                    <td>12</td>
+                    <td>&nbsp;</td>
+                    <td>edit</td>
+                    <td>delete</td>
+                </tr>
+                <tr>
+                    <td><input type="text" /></td>
+                    <td><input type="number" /></td>
+                    <td><input type="text" /></td>
+                    <td><button>Add Item</button></td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <hr />
+        <p>&copy; list IT 2019</p>
+    </footer>
+    <!-- End Body -->
+</body>
 
-			<div>List Name</div>
-			<div><input type="text" /></div>
-			<div><button>Add List</button></div>
-		</form>
-		<hr />
-		<form target="#">
-			<table>
-				<tr>
-					<td>Item</td>
-					<td>Quantity</td>
-					<td>Description</td>
-					<td colspan="2"><button>Print</button>
-				</tr>
-				<tr>
-					<td>Milk</td>
-					<td>1</td>
-					<td>Low Fat</td>
-					<td>edit</td>
-					<td>delete</td>
-				</tr>
-				<tr>
-					<td>Bread</td>
-					<td>1</td>
-					<td>Whole Wheat</td>
-					<td>edit</td>
-					<td>delete</td>
-				</tr>
-				<tr>
-					<td>Eggs</td>
-					<td>12</td>
-					<td>&nbsp;</td>
-					<td>edit</td>
-					<td>delete</td>
-				</tr>
-				<tr>
-					<td><input type="text" /></td>
-					<td><input type="number" /></td>
-					<td><input type="text" /></td>
-					<td><button>Add Item</button></td>
-					<td>&nbsp;</td>
-				</tr>
-			</table>
-		</form>
-		<div>
-			<hr />
-			<p>&copy; list IT 2019</p>
-		</div>
-	</body>
 </html>
